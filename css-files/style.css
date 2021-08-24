@@ -12,18 +12,21 @@ h1{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,120px);
-    background-color: #DE5A2B
+    background-color: #88cff1;
+    /* background-color: #DE5A2B; */
+    overflow: hidden;
 }
 
 .game-container .single-field{
-    border: 2px solid #E99553;
+    border: 2px solid #57c0f9;
     display: grid;
     place-items: center;
     cursor: pointer;
+    box-shadow: inset 5px 2px 20px rgba(0,0,0,.34);
 }
 
 .game-container .single-field p{
-    color: #DE5A2B;
+    color: #88cff1;
     font-size: 30px;
 }
 
@@ -36,6 +39,7 @@ h1{
     font-size: 40px;
     visibility: hidden;
     background-color:  #e7eb0f;
+    box-shadow: inset 0px 0px 20px 40px rgba(0,0,0,.11);
 }
 #final-field p{
     margin: 0;
@@ -51,6 +55,14 @@ h1{
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     border: none;
+    z-index: 6;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.51);
+}
+
+#restart-game:hover{
+    background-color: #f3f3f3;
+    /* box-shadow: 0 0 4px 4px rgba(0,0,0,.51); */
+    box-shadow:0 0 4px 4px rgba(0,0,0,.51), inset 0px 0px 4px 4px rgba(0,0,0,.31);
 }
 
 #stats{

@@ -14,7 +14,7 @@ let cnt = 1;
 document.getElementById('restart-game').addEventListener('click', function(){
     for(let i=0; i<clList.length; i++){
         clList[i].innerText = numbers[i];
-        clList[i].style.color = '#DE5A2B';
+        clList[i].style.color = '#88cff1';
     }
     cnt = 1;
     const finalField = document.getElementById('final-field');
